@@ -1,4 +1,4 @@
-# Assistant – Politique de télétravail
+# Assistant – Gouvernance et politique
 
 Ce projet implémente un assistant strategique interactif dédié au cadre de gouvernance, construit avec Streamlit et Azure AI Projects. Grâce à trois agents spécialisés — recherche documentaire, recherche web et synthèse — l'application permet de répondre de manière contextualisée et structurée aux questions liées aux politiques internes de télétravail.
 
