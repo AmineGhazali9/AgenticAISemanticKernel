@@ -26,8 +26,8 @@ agent_icons = {
     "web": "🌐",
     "summary": "🧠"
 }
-st.set_page_config(page_title="Assistant RH - Télétravail", layout="wide")
-st.title("🤖 Assistant RH – Politique de télétravail")
+st.set_page_config(page_title="Assistant - Gouvernance", layout="wide")
+st.title("🤖 Assistant agentique - Gouvernance TI-IA-Données-Entreprise")
 
 # Sidebar
 with st.sidebar:
@@ -93,7 +93,7 @@ async def main() -> None:
         with st.spinner(f"{agent_icons['summary']} Agent Résumé en cours..."):
             thread3 = await client.agents.create_thread()
             response_summary = await summary_agent.get_response(messages=combined_input, thread_id=thread3.id)
-        with st.expander(f"{agent_icons['summary']} Synthèse et recommandations RH"):
+        with st.expander(f"{agent_icons['summary']} Synthèse et recommandations "):
             st.chat_message("assistant").markdown(response_summary.message.content)
 
         # ----- Optional Cleanup: Delete the conversation threads -----
