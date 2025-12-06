@@ -8,7 +8,7 @@ Ce projet implémente un assistant strategique interactif dédié au cadre de go
 
 **Démo : Assistant en gouvernance intelligent**
 
-Ce code implémente une application Streamlit qui utilise plusieurs agents IA pour analyser la charte RH de Cofomo et proposer des recommandations sur le télétravail.
+Ce code implémente une application Streamlit qui utilise plusieurs agents IA pour analyser la charte disponible dans l'organisation et proposer des recommandations.
 
 L’application combine :
 
@@ -17,7 +17,7 @@ L’application combine :
 - **Recherche de tendances marché**  
   Identification des meilleures pratiques et innovations en gouvernance.
 - **Synthèse et recommandations concrètes**  
-  Guidance pour les décisions des équipes RH et des managers.
+  Guidance pour les décisions des équipes de gouvernance et des managers.
 
 Le tout est piloté via une interface web simple et interactive développée avec Streamlit.
 
@@ -35,8 +35,8 @@ Le tout est piloté via une interface web simple et interactive développée ave
 
 1. **Cloner le dépôt**  
    ```bash
-   git clone https://votre-repo/assistant-rh-teletravail.git
-   cd assistant-rh-teletravail
+   git clone https://votre-repo/assistant-gouvernance.git
+   cd assistant-teletravail
    ```
 
 2. **Créer et activer** un environnement virtuel  
@@ -60,7 +60,7 @@ Le tout est piloté via une interface web simple et interactive développée ave
    AZURE_AI_PROJECT_CONNECTION_STRING="<Votre chaîne de connexion Azure AI Projects>"
    ```
 2. **Identifiants des agents**  
-   Ouvrez `AssistantRH.py` et remplacez les constantes `AGENT1_ID`, `AGENT2_ID` et `AGENT3_ID` par les identifiants de vos agents Azure AI.
+   Ouvrez `Assistant.py` et remplacez les constantes `AGENT1_ID`, `AGENT2_ID` et `AGENT3_ID` par les identifiants de vos agents Azure AI.
 
 ---
 
@@ -70,6 +70,6 @@ Le tout est piloté via une interface web simple et interactive développée ave
 
 Exécutez la commande suivante pour démarrer l’interface Streamlit :  
 ```bash
-streamlit run AssistantRH.py
+streamlit run Assistant.py
 ```  
 L’application sera disponible par défaut sur http://localhost:8501 .
